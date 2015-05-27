@@ -12,3 +12,57 @@ settings
 scalaSource
 scalaVersion
 javaSource
+compile
+help
+project
+setings
+ssetings
+settings
+settings baseDirectory
+help settings
+settings -V
+:quit
+exit
+~ compile
+clean
+compile
+test
+!
+!
+!
+!:
+!:3
+test
+show compile
+exampleTask
+help
+tasks
+exampleTask
+update
+tasks
+help tasks
+tasks -v
+exit
+tasks
+exampleTask
+exit
+show exampleTask
+inspect compile
+inspect exampleTask
+tasks -v
+update
+task
+tasks
+run
+exit
+update
+exit
+update
+tasks
+settings
+librarydependencies
+settings libraryDependencies
+inspect libraryDependencies
+library-dependencies
+libraryDependencies
+exit
