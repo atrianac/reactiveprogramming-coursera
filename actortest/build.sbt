@@ -2,6 +2,7 @@ lazy val akkaActor = "com.typesafe.akka" %% "akka-actor" % "2.3.9"
 lazy val akkaTestKit = "com.typesafe.akka" %% "akka-testkit" % "2.3.9"
 lazy val akkaPersistence = "com.typesafe.akka" %% "akka-persistence-experimental" % "2.3.9"
     
+organization := baseDirectory.value.getName
 
 lazy val root = (project in file(".")).
 					settings(

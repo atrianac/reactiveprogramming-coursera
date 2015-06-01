@@ -66,3 +66,22 @@ inspect libraryDependencies
 library-dependencies
 libraryDependencies
 exit
+inspect test:fullClasspath
+inspect *:fullClasspath
+clear
+inspect *:fullClasspath
+inspect test:fullClasspath
+inspect runtime:fullClasspath
+inspect compile:fullClasspath
+inspect name
+compile in Compile
+compile in Tets
+compile in Test
+exit
+inspect organization
+inspect name
+exit
+inspect organization
+inspect compile
+inspect compileInputs
+eclipse
