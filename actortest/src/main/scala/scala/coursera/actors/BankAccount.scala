@@ -17,7 +17,7 @@ class BankAccount extends Actor {
     case Withdraw(amount) if(amount <= balance) =>
       balance -= amount
       sender ! Done
-    case _ => Failed
+    case _ => sender ! Failed
   }
 }
 

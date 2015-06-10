@@ -1,1 +1,8 @@
 target
+.classpath
+*.project
+*.class
+*.classpath
+*.cache-main
+*.cache-tests
+bin

@@ -27,6 +27,7 @@ class WireTransfer extends Actor {
   
   def awaitDeposit(client: ActorRef): Receive = LoggingReceive {
     case BankAccount.Done =>
+      println("sucess")
       client ! Done
       context.stop(self)
   }

@@ -16,7 +16,7 @@ class TransferMain extends Actor {
   accountA ! BankAccount.Deposit(100)
 
   def receive = LoggingReceive {
-    case BankAccount.Done => transfer(50)
+    case BankAccount.Done => transfer(150)
   }
 
   def transfer(amount: BigInt): Unit = {
@@ -24,7 +24,10 @@ class TransferMain extends Actor {
     transaction ! WireTransfer.Transfer(accountA, accountB, amount)
     context.become(LoggingReceive {
       case WireTransfer.Done =>
-        print("sucess")
+        println("sucess")
+        context.stop(self)
+      case WireTransfer.Failed =>
+        println("failed")
         context.stop(self)
     })
   }

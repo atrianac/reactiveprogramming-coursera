@@ -1,6 +1,7 @@
 lazy val akkaActor = "com.typesafe.akka" %% "akka-actor" % "2.3.9"
 lazy val akkaTestKit = "com.typesafe.akka" %% "akka-testkit" % "2.3.9"
 lazy val akkaPersistence = "com.typesafe.akka" %% "akka-persistence-experimental" % "2.3.9"
+lazy val junit = "junit" % "junit" % "4.8.1" % "test"
     
 organization := baseDirectory.value.getName
 
@@ -11,5 +12,6 @@ lazy val root = (project in file(".")).
     					scalaVersion := "2.11.4",
     					libraryDependencies += akkaActor,
     					libraryDependencies += akkaTestKit,
-    					libraryDependencies += akkaPersistence
+    					libraryDependencies += akkaPersistence,
+    					libraryDependencies += junit
 					)
